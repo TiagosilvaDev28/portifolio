@@ -14,6 +14,11 @@
   --font-action: 'Muli', serif;
 }
 
+html{
+scroll-behavior: smooth;
+
+}
+
 .hamburguer {
   width: 2rem;
   height: 2rem;
@@ -169,10 +174,14 @@ header {
   top: 0;
   right: -20rem;
   transition: all 1s;
+
+  
 }
 
 .show-menu .sidebar {
   right: 0;
+
+
 }
 
 .menu {
@@ -180,11 +189,14 @@ header {
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
+  
 }
 
 .menu-item {
   text-align: center;
   margin-bottom: 0.5rem;
+
+  
 }
 
 .menu-link {
@@ -546,9 +558,66 @@ header {
   padding: 0.3rem;
 }
 
-.btn-orcamento {
+.btn-orcamento{
   text-transform: uppercase;
   padding: 1rem;
   cursor: pointer;
   grid-column: 2;
+
 }
+
+footer{
+width: 100%;
+height: 7rem;
+background-color: #17181b;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.footer-content{
+width: 60%;
+display: flex;
+justify-content: space-between;
+}
+
+.footer-content p{
+  font-family: var(--font-secundary);
+  color: #a7a7a7;
+  font-size: 1.2rem;
+}
+
+.social-list a{
+margin: 0 2rem;
+color: #a7a7a7;
+font-size: 1.3rem;
+}
+
+.social-list ul{
+display: flex;
+}
+
+#link-topo{
+  position: fixed;
+  right: 3rem;
+  bottom: 3rem;
+  width: 3rem;
+  height: 3rem;
+  background: #da22ff;
+  background: -webkit-linear-gradient(to right, #9733ee, #da22ff);
+  background: linear-gradient(to right, #9733ee, #da22ff);
+  display: flex;
+ justify-content: center;
+align-items: center;
+color: #eee;
+border-radius: .3rem;
+box-shadow: 0 0.1rem 0.6rem #00000009;
+
+
+}
+
+
+
+
+
+
