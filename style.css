@@ -14,9 +14,9 @@
   --font-action: 'Muli', serif;
 }
 
-html{
-scroll-behavior: smooth;
-
+.html {
+  font-size: 1.6rem;
+  scroll-behavior: smooth;
 }
 
 .hamburguer {
@@ -84,7 +84,6 @@ scroll-behavior: smooth;
 }
 
 header {
-  width: 100%;
   height: 100vh;
   overflow: hidden;
   position: relative;
@@ -115,6 +114,8 @@ header {
 }
 
 .banner {
+  justify-content: center;
+  text-align: center;
   position: absolute;
   top: 30%;
   left: 15%;
@@ -174,14 +175,11 @@ header {
   top: 0;
   right: -20rem;
   transition: all 1s;
-
-  
+  z-index: 80;
 }
 
 .show-menu .sidebar {
   right: 0;
-
-
 }
 
 .menu {
@@ -189,14 +187,11 @@ header {
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-  
 }
 
 .menu-item {
   text-align: center;
   margin-bottom: 0.5rem;
-
-  
 }
 
 .menu-link {
@@ -235,9 +230,10 @@ header {
   background-color: #9733ee;
 }
 .conhecimentos {
+  height: 100%;
   display: grid;
   grid-template-columns: repeat(16, 1fr);
-  grid-template-rows: repeat(6, 6rem);
+  grid-template-rows: repeat(6, 3.5rem);
   row-gap: 0.5rem;
 }
 
@@ -272,6 +268,7 @@ header {
 }
 
 .sessao-conhecimentos {
+  height: 100%;
   background-color: #f5f5f5;
 }
 
@@ -296,12 +293,12 @@ header {
 }
 
 .conhecimento-header i {
-  font-size: 2.5rem;
+  font-size: 5rem;
 }
 
 .conhecimento-header h3 {
   font-family: var(--font-secundary);
-  font-size: 2rem;
+  font-size: 3rem;
   padding-left: 1rem;
 }
 
@@ -312,8 +309,9 @@ header {
 
 .conhecimentos-img-wrapper {
   grid-column: 7 / 11;
-  grid-row: 3 / 7;
-  width: 100%;
+  grid-row: 2 / 6;
+  width: 80%;
+  height: 80%;
 }
 
 .conhecimentos-img-wrapper img {
@@ -322,8 +320,10 @@ header {
 }
 
 .projetos {
+  width: 100%;
   display: flex;
   justify-content: space-evenly;
+  margin-bottom: 2rem;
 }
 
 .card {
@@ -334,6 +334,7 @@ header {
 
 .card-img-wrapper {
   width: 100%;
+
   height: 100%;
   background-color: #9733ee;
   border-radius: 0.5rem;
@@ -383,6 +384,7 @@ header {
   width: 80%;
   margin-bottom: 2rem;
 }
+
 .btn {
   background: #da22ff;
   background: -webkit-linear-gradient(to right, #9733ee, #da22ff);
@@ -407,6 +409,7 @@ header {
 
 .sessao-contato {
   width: 100%;
+
   height: 100vh;
   background-color: #272727;
   display: flex;
@@ -445,6 +448,7 @@ header {
 
 .sessao-contato form {
   width: 100%;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -501,6 +505,7 @@ header {
 
 .sessao-orcamento {
   width: 100%;
+
   height: 100vh;
   background: url(imagens/bg-orcamento.jpg);
   object-fit: cover;
@@ -511,7 +516,7 @@ header {
 
 .orcamento-wrapper {
   width: 60%;
-  height: 88%;
+  height: 80%;
   background-color: #ffffff99;
   border-radius: 10px;
   box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
@@ -558,46 +563,45 @@ header {
   padding: 0.3rem;
 }
 
-.btn-orcamento{
+.btn-orcamento {
   text-transform: uppercase;
   padding: 1rem;
   cursor: pointer;
   grid-column: 2;
-
 }
 
-footer{
-width: 100%;
-height: 7rem;
-background-color: #17181b;
-display: flex;
-justify-content: center;
-align-items: center;
+footer {
+  width: 100%;
 
+  height: 7rem;
+  background-color: #17181b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.footer-content{
-width: 60%;
-display: flex;
-justify-content: space-between;
+.footer-content {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
 }
 
-.footer-content p{
+.footer-content p {
   font-family: var(--font-secundary);
   color: #a7a7a7;
   font-size: 1.2rem;
 }
 
-.social-list a{
-margin: 0 2rem;
-color: #a7a7a7;
-font-size: 1.3rem;
+.social-list a {
+  margin: 0 2rem;
+  color: #a7a7a7;
+  font-size: 1.3rem;
 }
 
-.social-list ul{
-display: flex;
+.social-list ul {
+  display: flex;
 }
 
-#link-topo{
+#link-topo {
   position: fixed;
   right: 3rem;
   bottom: 3rem;
@@ -607,17 +611,88 @@ display: flex;
   background: -webkit-linear-gradient(to right, #9733ee, #da22ff);
   background: linear-gradient(to right, #9733ee, #da22ff);
   display: flex;
- justify-content: center;
-align-items: center;
-color: #eee;
-border-radius: .3rem;
-box-shadow: 0 0.1rem 0.6rem #00000009;
-
-
+  justify-content: center;
+  align-items: center;
+  color: #eee;
+  border-radius: 0.3rem;
+  box-shadow: 0 0.1rem 0.6rem #00000009;
 }
 
+@media (max-width: 768px) {
+  html {
+    font-size: 50%;
+    text-align: center;
+  }
+  footer {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+}
 
+@media (max-width: 425px) {
+  .hamburguer {
+    right: 4rem;
+    top: 3rem;
+    width: 4rem;
+    height: 3rem;
+  }
+  .banner {
+    text-align: center;
+    top: 35%;
+    left: 3%;
+  }
+  .sessao-orcamento {
+    display: flex;
+  }
 
+  footer {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
 
+  #link-topo {
+    width: 4rem;
+    height: 4rem;
+  }
+}
 
+@media (max-width: 320px) {
+  .hamburguer {
+    right: 3rem;
+    top: 3rem;
+    width: 4rem;
+    height: 3rem;
+  }
 
+  .sessao-conhecimentos {
+    font-size: 50%;
+    text-align: center;
+  }
+
+  .conhecimentos {
+    align-items: center;
+    justify-content: center;
+    margin-right: 11rem;
+    margin-left: 2rem;
+  }
+
+  .conhecimento-header h3 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.6rem;
+  }
+
+  .conhecimentos-img-wrapper {
+    margin-left: 5rem;
+    width: 13rem;
+  }
+
+  .conhecimento-header i {
+    font-size: 3rem;
+  }
+}
