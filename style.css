@@ -664,6 +664,12 @@ footer {
     text-align: center;
     justify-content: center;
   }
+
+  .footer-content p {
+    text-align: center;
+   
+    font-size: 1.6rem;
+  }
 }
 
 @media (max-width: 425px) {
@@ -720,6 +726,12 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .footer-content p {
+    text-align: center;
+   
+    font-size: 0.9rem;
   }
 
   .social-list ul {
